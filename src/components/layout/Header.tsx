@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="border-b border-[#f1f1f1] bg-white">
-      <Container>
+      <Container dotted={false}>
         <div className="flex h-[46px] w-full max-w-[1280px] items-center justify-between">
           <div className="flex items-center gap-12">
             <Link

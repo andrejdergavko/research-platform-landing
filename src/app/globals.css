@@ -33,3 +33,9 @@
 body {
   color: var(--text-primary);
 }
+
+.bg-dot-pattern {
+  background-color: var(--background);
+  background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
