@@ -3,9 +3,9 @@ import Button from '@/components/Button';
 
 const Hero = () => {
   return (
-    <Container dotted={true}>
+    <Container>
       <div className="flex flex-col gap-7 max-w-[750px] h-[640px] pt-7 pb-24 mt-[130px]">
-        <p className="text-[11px] mb-2 uppercase font-ibm-plex-mono tracking-[1.6px] ">
+        <p className="text-small-uppercase">
           Powered by <span className="text-primary">AI</span>
         </p>
 

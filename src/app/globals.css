@@ -36,6 +36,14 @@ body {
 
 .bg-dot-pattern {
   background-color: var(--background);
-  background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+  background-image: radial-gradient(circle, #ededed 1px, transparent 1px);
   background-size: 20px 20px;
+}
+
+.text-small-uppercase {
+  font-size: 11px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: var(--font-ibm-plex-mono);
+  letter-spacing: 1.6px;
 }

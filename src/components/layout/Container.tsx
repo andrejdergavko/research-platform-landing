@@ -9,7 +9,7 @@ type ContainerProps = {
 const Container = ({
   children,
   className = '',
-  dotted = true,
+  dotted = false,
 }: ContainerProps) => {
   return (
     <div
