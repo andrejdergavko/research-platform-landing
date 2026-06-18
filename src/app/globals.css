@@ -115,7 +115,7 @@ body {
 .bg-dot-pattern {
   background-color: var(--background);
   background-image: radial-gradient(circle, #e2e2e2 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-size: 22px 22px;
 }
 
 .bg-noise-pattern {
