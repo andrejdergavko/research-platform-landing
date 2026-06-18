@@ -4,6 +4,7 @@ import Sources from '@/components/sections/Sources/Sources';
 import HowItWorks from '@/components/sections/HowItWorks/HowItWorks';
 import WhatYouGet from '@/components/sections/WhatYouGet/WhatYouGet';
 import Footer from '@/components/layout/Footer';
+import BuiltFor from '@/components/sections/BuiltFor/BuiltFor';
 import FinalCTA from '@/components/sections/FinalCTA/FinalCTA';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Sources />
       <HowItWorks />
       <WhatYouGet />
+      <BuiltFor />
       <FinalCTA />
       <Footer />
     </div>
