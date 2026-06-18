@@ -2,6 +2,7 @@ import Header from '@/components/layout/Header';
 import Hero from '@/components/sections/Hero/Hero';
 import Sources from '@/components/sections/Sources/Sources';
 import HowItWorks from '@/components/sections/HowItWorks/HowItWorks';
+import WhatYouGet from '@/components/sections/WhatYouGet/WhatYouGet';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Sources />
       <HowItWorks />
+      <WhatYouGet />
     </div>
   );
 }
