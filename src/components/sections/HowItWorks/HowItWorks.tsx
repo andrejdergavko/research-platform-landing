@@ -1,6 +1,7 @@
 import Container from '@/components/layout/Container';
 import { SECTION_IDS } from '@/constants/navigation';
 import Divider from './Divider';
+import NoizeBG from '../NoizeBG';
 
 const STEPS = [
   {
@@ -24,27 +25,40 @@ const STEPS = [
 const HowItWorks = () => {
   return (
     <section id={SECTION_IDS.howItWorks}>
-    <Container className="mt-34">
-      <h2 className="text-title-sense text-[56px]">How it works.</h2>
+      <NoizeBG className="my-15">
+        <Container className="!py-0">
+          <h2 className="text-title-sense text-[56px] text-white">
+            How it works.
+          </h2>
 
-      <Divider className="mb-8" />
+          <Divider className="mb-8 !border-white/30" />
 
-      {STEPS.map((step, index) => (
-        <div key={index} className="flex flex-col w-[400px] mb-2">
-          <div className="flex gap-7 items-start">
-            <span className="mt-5 text-primary font-bold text-small-uppercase ">
-              L{index + 1}
-            </span>
-            <div className="w-full border-b border-border-gray pb-5">
-              <h3 className="text-title-sense text-[36px] !tracking-[-2.3px]">
-                {step.title}
-              </h3>
-              <p className="text-[16px]">{step.description}</p>
+          {STEPS.map((step, index) => (
+            <div key={index} className="flex flex-col w-[400px] mb-2">
+              <div className="flex gap-7 items-start">
+                <span className="mt-5 text-primary font-bold text-small-uppercase">
+                  L{index + 1}
+                </span>
+                <div
+                  className={[
+                    'w-full pb-5',
+                    index !== STEPS.length - 1 && 'border-b border-white/20',
+                  ]
+                    .filter(Boolean)
+                    .join(' ')}
+                >
+                  <h3 className="text-title-sense text-[36px] text-white !tracking-[-2.3px]">
+                    {step.title}
+                  </h3>
+                  <p className="text-[16px] text-white/60">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ))}
-    </Container>
+          ))}
+        </Container>
+      </NoizeBG>
     </section>
   );
 };
