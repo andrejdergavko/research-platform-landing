@@ -47,8 +47,6 @@ const FooterItem = ({ children }: { children: ReactNode }) => (
 const Footer = () => {
   return (
     <Container className="bg-white">
-      <Divider className="!border-border-gray" />
-
       <div className="grid grid-cols-[2fr_1fr_1fr_1fr] my-10">
         <Logo />
 

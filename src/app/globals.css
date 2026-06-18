@@ -10,6 +10,8 @@
   --color-secondary: #10b981;
 
   --color-border-gray: #e6e6e6;
+
+  --background-noise: #000000db;
 }
 
 @theme inline {
@@ -42,6 +44,12 @@ body {
   background-color: var(--background);
   background-image: radial-gradient(circle, #e2e2e2 1px, transparent 1px);
   background-size: 20px 20px;
+}
+
+.bg-noise-pattern {
+  background-color: var(--background-noise);
+  background-image: url('/background.svg');
+  background-repeat: repeat;
 }
 
 .text-title-sense {
