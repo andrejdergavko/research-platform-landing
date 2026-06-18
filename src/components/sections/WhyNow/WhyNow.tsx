@@ -21,7 +21,7 @@ const AFTER_ITEMS = [
 const WhyNow = () => {
   return (
     <section id={SECTION_IDS.whyNow}>
-      <Container className="mt-20 py-20 bg-[var(--color-primary)]/20">
+      <Container className="mt-20 py-20 bg-[var(--color-primary)]/10">
         <h2 className="text-title-sense text-[56px] pb-8 max-w-[900px] leading-[1.05]">
           Research used to take days.{' '}
           <span className="text-primary">Now it takes minutes.</span>
