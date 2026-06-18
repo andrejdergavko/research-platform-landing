@@ -10,13 +10,17 @@ import FinalCTA from '@/components/sections/FinalCTA/FinalCTA';
 
 export default function Home() {
   return (
-    <div className="bg-dot-pattern ">
+    // <div className="bg-dot-pattern ">
+    <div className="">
       <Header />
       <Hero />
       <Sources />
       <HowItWorks />
-      <WhatYouGet />
-      <BuiltFor />
+      <div className="bg-dot-pattern">
+        <WhatYouGet />
+        <BuiltFor />
+      </div>
+
       <WhyNow />
       <FinalCTA />
       <Footer />
