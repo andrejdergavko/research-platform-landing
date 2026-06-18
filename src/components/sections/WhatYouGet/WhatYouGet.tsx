@@ -1,6 +1,6 @@
 import Container from '@/components/layout/Container';
+import { SECTION_IDS } from '@/constants/navigation';
 import Divider from '../HowItWorks/Divider';
-import Dot from '@/components/Dot';
 
 const ITEMS = [
   {
@@ -35,6 +35,7 @@ const WhatYouGet = () => {
   const lastRowStart = ITEMS.length - (ITEMS.length % COLS || COLS);
 
   return (
+    <section id={SECTION_IDS.whatYouGet}>
     <Container className="mt-20">
       <h2 className="text-title-sense text-[56px] pb-8">What you get.</h2>
 
@@ -69,6 +70,7 @@ const WhatYouGet = () => {
 
       <Divider className="mt-0" />
     </Container>
+    </section>
   );
 };
 

@@ -1,4 +1,5 @@
 import Container from '@/components/layout/Container';
+import { SECTION_IDS } from '@/constants/navigation';
 import Divider from './Divider';
 
 const STEPS = [
@@ -22,6 +23,7 @@ const STEPS = [
 
 const HowItWorks = () => {
   return (
+    <section id={SECTION_IDS.howItWorks}>
     <Container className="mt-34">
       <h2 className="text-title-sense text-[56px]">How it works.</h2>
 
@@ -43,6 +45,7 @@ const HowItWorks = () => {
         </div>
       ))}
     </Container>
+    </section>
   );
 };
 
