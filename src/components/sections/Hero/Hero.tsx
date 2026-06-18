@@ -4,16 +4,14 @@ import Button from '@/components/Button';
 const Hero = () => {
   return (
     <Container>
-      <div className="flex flex-col gap-7 max-w-[750px] h-[640px] pt-7 pb-24 mt-[130px]">
+      <div className="flex flex-col gap-7 max-w-[750px] h-[500px] pt-7 pb-24 mt-[130px]">
         <p className="text-small-uppercase">
           Powered by <span className="text-primary">AI</span>
         </p>
 
         <div className="flex flex-col gap-2">
-          <h1 className="text-[70px] font-[playfair] font-bold tracking-[-4px] [word-spacing:.1em] leading-[45px]">
-            Not another AI tool.
-          </h1>
-          <h1 className="text-[70px] font-[playfair] font-bold tracking-[-1px] leading-[45px]">
+          <h1 className="text-title-sense text-[70px]">Not another AI tool.</h1>
+          <h1 className="text-title-sense text-[70px]">
             The layer above them all.
           </h1>
         </div>
