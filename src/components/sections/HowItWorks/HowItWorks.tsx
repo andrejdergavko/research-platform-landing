@@ -37,7 +37,7 @@ const HowItWorks = () => {
             <div key={index} className="flex flex-col w-[400px] mb-2">
               <div className="flex gap-7 items-start">
                 <span className="mt-5 text-primary font-bold text-small-uppercase">
-                  L{index + 1}
+                  0{index + 1}
                 </span>
                 <div
                   className={[

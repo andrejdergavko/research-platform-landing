@@ -36,40 +36,40 @@ const WhatYouGet = () => {
 
   return (
     <section id={SECTION_IDS.whatYouGet}>
-    <Container className="mt-20">
-      <h2 className="text-title-sense text-[56px] pb-8">What you get.</h2>
+      <Container className="mt-20">
+        <h2 className="text-title-sense text-[56px] pb-8">What you get.</h2>
 
-      <Divider className="mb-0" />
+        <Divider className="mb-0" />
 
-      <div className="grid grid-cols-3">
-        {ITEMS.map((item, index) => (
-          <div
-            key={index}
-            className={[
-              'flex  justify-center p-12',
-              index % COLS !== COLS - 1 && 'border-r border-border-gray',
-              index < lastRowStart && 'border-b border-border-gray',
-            ]
-              .filter(Boolean)
-              .join(' ')}
-          >
-            <span className="text-primary font-bold mt-3 mr-3 text-small-uppercase  !text-[14px] ">
-              {index + 1}.
-            </span>
-            <div>
-              <h3 className="text-[32px] !tracking-[-3.3px] mb-4 font-medium flex items-center gap-2">
-                {item.title}
-              </h3>
-              <p className="text-[16px] text-text-secondary font-medium">
-                {item.description}
-              </p>
+        <div className="grid grid-cols-3">
+          {ITEMS.map((item, index) => (
+            <div
+              key={index}
+              className={[
+                'flex  justify-center p-12',
+                index % COLS !== COLS - 1 && 'border-r border-border-gray',
+                index < lastRowStart && 'border-b border-border-gray',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+            >
+              <span className="text-primary font-bold mt-3 mr-3 text-small-uppercase  !text-[14px] ">
+                0{index + 1}
+              </span>
+              <div>
+                <h3 className="text-[32px] !tracking-[-3.3px] mb-4 font-medium flex items-center gap-2">
+                  {item.title}
+                </h3>
+                <p className="text-[16px] text-text-secondary font-medium">
+                  {item.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <Divider className="mt-0" />
-    </Container>
+        <Divider className="mt-0" />
+      </Container>
     </section>
   );
 };

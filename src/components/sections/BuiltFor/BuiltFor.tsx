@@ -36,7 +36,7 @@ const BuiltFor = () => {
                 .join(' ')}
             >
               <span className="text-small-uppercase text-primary font-bold !text-[12px] !mb-0">
-                {String(index + 1).padStart(2, '0')}
+                0{index + 1}
               </span>
 
               <h3 className="text-[28px] !tracking-[-2.5px] font-medium leading-tight">
