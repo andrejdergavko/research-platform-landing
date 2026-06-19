@@ -13,13 +13,17 @@ export const SECTION_NAV_LINKS = [
   },
   {
     id: SECTION_IDS.whatYouGet,
-    label: 'What you get',
+    label: 'Features',
     href: `/#${SECTION_IDS.whatYouGet}`,
   },
   {
     id: SECTION_IDS.whoIsItFor,
-    label: 'Who is it for',
+    label: "Who it's for",
     href: `/#${SECTION_IDS.whoIsItFor}`,
   },
-  { id: SECTION_IDS.whyNow, label: 'Why now', href: `/#${SECTION_IDS.whyNow}` },
+  {
+    id: SECTION_IDS.whyNow,
+    label: 'Problems we solve',
+    href: `/#${SECTION_IDS.whyNow}`,
+  },
 ] as const;

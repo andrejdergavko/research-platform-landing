@@ -11,8 +11,8 @@ const FinalCTA = () => {
           The world is changing faster than ever.
         </h3>
 
-        <h1 className="text-title-sense text-[70px] text-white">
-          Understand what’s happening before it becomes obvious.{' '}
+        <h1 className="flex flex-col gap-4 text-center text-title-sense text-[60px] text-white leading-[33.05px]">
+          Understand what’s happening before it becomes obvious.
         </h1>
 
         <Button
