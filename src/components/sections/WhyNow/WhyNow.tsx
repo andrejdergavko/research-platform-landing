@@ -3,19 +3,18 @@ import Dot from '@/components/Dot';
 import { SECTION_IDS } from '@/constants/navigation';
 
 const BEFORE_ITEMS = [
-  'Search dozens of websites just to find one report',
-  'Spend hours reading 50–100 page documents',
-  'Most research published only in English',
-  'Manually track trends across scattered sources',
-  'Continuous monitoring takes up your entire week',
+  'Manually searching dozens of websites for relevant reports',
+  'Spending hours reading 50–100 page research documents',
+  'Missing important research published across different sources',
+  'Language barriers in global research',
 ];
 
 const AFTER_ITEMS = [
   'Reports from trusted sources, already collected in one place',
-  'Executive summaries — understand key findings in minutes',
-  'Trends and topics detected automatically',
+  'Understand key ideas from long research reports in just a few minutes',
   'Read summaries in your native language',
   'Always linked back to the original source',
+  'Continuous awareness of industry trends',
 ];
 
 const WhyNow = () => {
@@ -53,7 +52,7 @@ const WhyNow = () => {
           <div className="flex flex-col gap-8 p-10 ">
             <div>
               <span className="text-small-uppercase text-primary font-bold !text-[12px] !mb-3">
-                With the platform
+                With Vector
               </span>
               <h3 className="text-[32px] !tracking-[-2.5px] font-medium leading-tight">
                 The new way

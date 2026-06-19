@@ -6,7 +6,7 @@ const Sources = () => {
     <div className="w-full flex flex-col justify-center items-center gap-2 pb-10">
       <h3 className="text-small-uppercase flex items-center gap-3">
         <Dot />
-        Trusted by insights from leading organizations
+        Trusted insights from leading organizations
       </h3>
       <SourcesCarousel />
     </div>
