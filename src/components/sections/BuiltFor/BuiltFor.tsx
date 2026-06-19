@@ -1,17 +1,33 @@
 import Container from '@/components/layout/Container';
-import Dot from '@/components/Dot';
 import { SECTION_IDS } from '@/constants/navigation';
 import Divider from '../HowItWorks/Divider';
 
-const PLACEHOLDER_USE_CASE =
-  'Track emerging AI trends, market signals, and industry shifts.';
-
 const PERSONAS = [
-  { title: 'Investors' },
-  { title: 'Founders' },
-  { title: 'Product Managers' },
-  { title: 'Analytics' },
-  { title: 'Researchers' },
+  {
+    title: 'Investors',
+    description:
+      'Identify opportunities earlier by tracking global trends, industries and research insights.',
+  },
+  {
+    title: 'Founders & Entrepreneurs',
+    description:
+      'Make faster strategic decisions using clear insights on markets, competitors and trends.',
+  },
+  {
+    title: 'Analytics',
+    description:
+      'Save time on reading and focus on analyzing insights from condensed research and reports.',
+  },
+  {
+    title: 'Product Managers',
+    description:
+      'Access global reports and studies to support deeper analysis and understanding.',
+  },
+  {
+    title: 'Researchers',
+    description:
+      'Turn market research and industry signals into clear product strategy and prioritization.',
+  },
 ];
 
 const BuiltFor = () => {
@@ -44,7 +60,7 @@ const BuiltFor = () => {
               </h3>
 
               <p className="text-[15px] text-text-secondary font-medium leading-[1.6] mt-auto">
-                {PLACEHOLDER_USE_CASE}
+                {persona.description}
               </p>
             </div>
           ))}
