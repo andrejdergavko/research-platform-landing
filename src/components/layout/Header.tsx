@@ -4,11 +4,13 @@ import Container from './Container';
 import Button from '../Button';
 import Logo from '../Logo';
 
-const Header = () => {
+const HEADER_HEIGHT = 86;
 
+const Header = () => {
   return (
-    <header className="border-b border-border-gray bg-background">
-      <Container dotted={false}>
+    <>
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-border-gray/60 bg-background/70 backdrop-blur-md supports-backdrop-filter:bg-background/60">
+        <Container dotted={false}>
         <div className="flex h-[46px] w-full max-w-[1280px] items-center justify-between">
           <div className="flex items-center gap-12">
             <Logo />
@@ -34,8 +36,10 @@ const Header = () => {
             </Button>
           </div>
         </div>
-      </Container>
-    </header>
+        </Container>
+      </header>
+      <div aria-hidden className="shrink-0" style={{ height: HEADER_HEIGHT }} />
+    </>
   );
 };
 
