@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { SECTION_NAV_LINKS } from '@/constants/navigation';
+import SmoothScrollLink from '../SmoothScrollLink';
 import Container from './Container';
 import Button from '../Button';
 import Logo from '../Logo';
@@ -16,13 +16,13 @@ const Header = () => {
             <Logo />
             <nav className="flex gap-7 text-[14px] font-normal ">
               {SECTION_NAV_LINKS.map((link) => (
-                <Link
+                <SmoothScrollLink
                   key={link.id}
                   href={link.href}
                   className="transition-colors hover:text-text-primary"
                 >
                   {link.label}
-                </Link>
+                </SmoothScrollLink>
               ))}
             </nav>
           </div>
@@ -32,7 +32,7 @@ const Header = () => {
               Sign in
             </Button>
             <Button variant="filled" className="h-full">
-              Request a demo
+              Try Vector
             </Button>
           </div>
         </div>

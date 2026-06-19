@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import Link from 'next/link';
 import { SECTION_NAV_LINKS } from '@/constants/navigation';
+import SmoothScrollLink from '../SmoothScrollLink';
 import Divider from '../sections/HowItWorks/Divider';
 import Container from './Container';
 import Logo from '../Logo';
@@ -35,9 +35,9 @@ const FooterLink = ({
   href: string;
   children: ReactNode;
 }) => (
-  <Link href={href} className={footerLinkClassName}>
+  <SmoothScrollLink href={href} className={footerLinkClassName}>
     {children}
-  </Link>
+  </SmoothScrollLink>
 );
 
 const FooterItem = ({ children }: { children: ReactNode }) => (

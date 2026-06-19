@@ -9,7 +9,7 @@ const Button = ({
   className?: string;
   variant?: 'outline' | 'filled';
 }) => {
-  const commonStyles = 'tracking-[1.2px] uppercase';
+  const commonStyles = 'tracking-[1.2px] uppercase cursor-pointer';
 
   const VARIANT_STYLES = {
     outline:

@@ -28,7 +28,7 @@ const Hero = () => {
 
         <div className="mt-6 flex gap-3">
           <Button variant="filled" className="h-[52px]">
-            Get started <span className="text-[14px]">→</span>
+            Try Vector <span className="text-[14px]">→</span>
           </Button>
         </div>
       </div>
