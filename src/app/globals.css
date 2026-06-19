@@ -118,6 +118,15 @@ body {
   background-size: 22px 22px;
 }
 
+.bg-dot-pattern-black {
+  background-image: radial-gradient(
+    circle,
+    rgba(57 57 57 / 0.62) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
 .bg-noise-pattern {
   background-color: var(--background-noise);
   background-image: url('/background.svg');

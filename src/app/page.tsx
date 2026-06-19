@@ -20,7 +20,7 @@ export default function Home() {
       </DotFieldBG>
 
       <HowItWorks />
-      <div className="bg-dot-pattern">
+      <div className="bg-dot-pattern py-15">
         <WhatYouGet />
         <BuiltFor />
       </div>

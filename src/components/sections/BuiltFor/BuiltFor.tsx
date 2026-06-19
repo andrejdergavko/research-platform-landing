@@ -17,7 +17,7 @@ const PERSONAS = [
 const BuiltFor = () => {
   return (
     <section id={SECTION_IDS.whoIsItFor}>
-      <Container className="my-20">
+      <Container className="mb-20 mt-25">
         <h2 className="text-title-sense text-[56px] pb-8 max-w-[900px] leading-[1.05]">
           Built for people who make decisions.
         </h2>

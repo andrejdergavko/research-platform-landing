@@ -25,7 +25,7 @@ const STEPS = [
 const HowItWorks = () => {
   return (
     <section id={SECTION_IDS.howItWorks}>
-      <NoizeBG className="mb-15">
+      <NoizeBG>
         <Container className="!py-0">
           <h2 className="text-title-sense text-[56px] text-white">
             How it works.
