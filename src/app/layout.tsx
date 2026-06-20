@@ -37,9 +37,9 @@ export default function RootLayout({
       className={`
          ${playfair.variable} ${ibmPlexMono.variable} ${inter.variable} h-full antialiased`}
     >
-      <GoogleTagManager gtmId="G-01PL53C60Y" />
+      <GoogleTagManager gtmId="GTM-T4BGX8JC" />
       <body className="min-h-full flex flex-col">{children}</body>
-      {/* <GoogleAnalytics gaId="G-01PL53C60Y" /> */}
+      {/* <GoogleAnalytics gaId="GTM-T4BGX8JC" /> */}
     </html>
   );
 }
