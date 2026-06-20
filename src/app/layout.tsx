@@ -1,11 +1,7 @@
 import type { Metadata } from 'next';
-import {
-  Geist,
-  Geist_Mono,
-  Playfair,
-  IBM_Plex_Mono,
-  Inter,
-} from 'next/font/google';
+import { Playfair, IBM_Plex_Mono, Inter } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import './globals.css';
 
 const playfair = Playfair({
@@ -41,6 +37,7 @@ export default function RootLayout({
          ${playfair.variable} ${ibmPlexMono.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+      <GoogleAnalytics gaId="G-01PL53C60Y" />
     </html>
   );
 }
