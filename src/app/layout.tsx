@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair, IBM_Plex_Mono, Inter } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import './globals.css';
 
@@ -36,8 +37,9 @@ export default function RootLayout({
       className={`
          ${playfair.variable} ${ibmPlexMono.variable} ${inter.variable} h-full antialiased`}
     >
+      <GoogleTagManager gtmId="G-01PL53C60Y" />
       <body className="min-h-full flex flex-col">{children}</body>
-      <GoogleAnalytics gaId="G-01PL53C60Y" />
+      {/* <GoogleAnalytics gaId="G-01PL53C60Y" /> */}
     </html>
   );
 }
