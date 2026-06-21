@@ -31,7 +31,11 @@ const Header = () => {
               <Button variant="outline" className="h-full">
                 Sign up
               </Button>
-              <Button variant="filled" className="h-full">
+              <Button
+                variant="filled"
+                className="h-full"
+                data-analytics="cta-click"
+              >
                 Try Vector
               </Button>
             </div>

@@ -3,12 +3,13 @@ const Button = ({
   onClick,
   className,
   variant = 'outline',
+  ...rest
 }: {
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
   variant?: 'outline' | 'filled';
-}) => {
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
   const commonStyles = 'tracking-[1.2px] uppercase cursor-pointer';
 
   const VARIANT_STYLES = {
@@ -23,6 +24,7 @@ const Button = ({
       type="button"
       className={`${VARIANT_STYLES[variant]} ${commonStyles} ${className}`}
       onClick={onClick}
+      {...rest}
     >
       {children}
     </button>

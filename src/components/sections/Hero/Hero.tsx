@@ -27,7 +27,11 @@ const Hero = () => {
         </p>
 
         <div className="mt-6 flex gap-3">
-          <Button variant="filled" className="h-[52px]">
+          <Button
+            variant="filled"
+            className="h-[52px]"
+            data-analytics="cta-click"
+          >
             Try Vector <span className="text-[14px]">→</span>
           </Button>
         </div>

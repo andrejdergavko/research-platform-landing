@@ -18,6 +18,7 @@ const FinalCTA = () => {
         <Button
           variant="filled"
           className="h-[52px] mt-10 bg-white !text-black"
+          data-analytics="cta-click"
         >
           Try Vector <span className="text-[14px]">→</span>
         </Button>
