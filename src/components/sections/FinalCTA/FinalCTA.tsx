@@ -20,7 +20,7 @@ const FinalCTA = () => {
           className="h-[52px] mt-10 bg-white !text-black"
           data-analytics="cta-click"
         >
-          Try Vector <span className="text-[14px]">→</span>
+          Get early access <span className="text-[14px]">→</span>
         </Button>
       </div>
     </NoizeBG>

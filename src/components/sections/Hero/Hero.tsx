@@ -26,15 +26,15 @@ const Hero = () => {
           a searchable knowledge platform that keeps you informed.
         </p>
 
-        <div className="mt-6 flex gap-3">
+        {/* <div className="mt-6 flex gap-3">
           <Button
             variant="filled"
             className="h-[52px]"
             data-analytics="cta-click"
           >
-            Try Vector <span className="text-[14px]">→</span>
+            Get early access <span className="text-[14px]">→</span>
           </Button>
-        </div>
+        </div> */}
       </div>
     </Container>
   );
