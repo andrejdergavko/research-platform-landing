@@ -10,6 +10,8 @@ import {
   SITE_TITLE,
 } from '@/lib/site';
 
+import AuthProvider from '@/components/providers/AuthProvider';
+
 import './globals.css';
 
 const playfair = Playfair({
@@ -116,7 +118,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
