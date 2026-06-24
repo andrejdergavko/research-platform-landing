@@ -69,6 +69,9 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
   },
+  other: {
+    google: 'notranslate',
+  },
 };
 
 const jsonLd = {
